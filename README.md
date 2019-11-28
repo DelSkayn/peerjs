@@ -1,4 +1,4 @@
-# This is a version of PeerJS which is build with browserify to avoid conflicts in the produced javascript file
+This is a version of PeerJS which is build with 'tsc' to avoid conflicts with other bundlers
 
 # PeerJS: Simple peer-to-peer with WebRTC #
 
