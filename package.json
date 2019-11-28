@@ -2,7 +2,7 @@
   "name": "peerjs",
   "version": "1.1.0",
   "description": "PeerJS client",
-  "main": "./dist/peerjs.min.js",
+  "main": "./dist/exports.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/peers/peerjs.git"
@@ -10,7 +10,7 @@
   "author": "Michelle Bu, Eric Zhang, Jairo Caro-Accino, Carlos Caballero",
   "license": "MIT",
   "scripts": {
-    "build": "browserify lib/exports.ts -p tsify  -p tinyify > dist/peerjs.min.js",
+    "build": "tsc",
     "prepublish": "npm run build",
     "postinstall": "opencollective-postinstall",
     "test": "mocha -r ts-node/register -r jsdom-global/register test/**/*.ts"
@@ -22,16 +22,13 @@
   "devDependencies": {
     "@types/chai": "^4.2.2",
     "@types/mocha": "^5.2.7",
-    "browserify": "^16.5.0",
     "chai": "^4.2.0",
     "jsdom": "^15.1.1",
     "jsdom-global": "^3.0.2",
     "mocha": "^6.2.0",
     "mock-socket": "8.0.5",
     "standard": "^14.1.0",
-    "tinyify": "^2.5.2",
     "ts-node": "^8.3.0",
-    "tsify": "^4.0.1",
     "typescript": "^3.6.2"
   },
   "dependencies": {
