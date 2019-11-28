@@ -1,9 +1,11 @@
+# This is a version of PeerJS which is build with browserify to avoid conflicts in the produced javascript file
+
 # PeerJS: Simple peer-to-peer with WebRTC #
 
 ### https://t.me/joinchat/ENhPuhTvhm8WlIxTjQf7Og
 
 [![Backers on Open Collective](https://opencollective.com/peer/backers/badge.svg)](#backers)
- [![Sponsors on Open Collective](https://opencollective.com/peer/sponsors/badge.svg)](#sponsors) 
+ [![Sponsors on Open Collective](https://opencollective.com/peer/sponsors/badge.svg)](#sponsors)
 
 PeerJS provides a complete, configurable, and easy-to-use peer-to-peer API built on top of WebRTC, supporting both data channels and media streams.
 
@@ -20,9 +22,9 @@ PeerJS provides a complete, configurable, and easy-to-use peer-to-peer API built
   ```
 
 
-**Create a Peer**  
+**Create a Peer**
 ```javascript
-const peer = new Peer('pick-an-id'); 
+const peer = new Peer('pick-an-id');
 // You can pick your own id or omit the id if you want to get a random one from the server.
 ```
 
@@ -236,4 +238,3 @@ Support this project by becoming a sponsor. Your logo will show up here with a l
 ## License
 
 PeerJS is licensed under the [MIT License](https://tldrlegal.com/l/mit).
-
